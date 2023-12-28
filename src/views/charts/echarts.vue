@@ -19,7 +19,6 @@
 <script>
 import * as echarts from 'echarts';
 import axios from "axios";
-import RealtimeDisplayBox from "./RealtimeDisplayBox.vue";
 
 export default {
   data() {
