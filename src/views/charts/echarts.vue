@@ -131,12 +131,9 @@ export default {
 }
 </script>
 <style scoped>
-.el-col {
-  padding: 30px 20px;
-}
 .user-name{
-  font-weight: 30px;
-  font-size: 25px;
+  font-weight: 26px;
+  font-size: 21px;
   color: blue;
 }
 .commend{
