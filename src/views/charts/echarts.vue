@@ -2,7 +2,7 @@
   <section class="chart-container">
     <el-row>
       <el-col :span="12">
-        <div ref="testChart" style="width:1400px; height:650px;position: absolute;left:20px;top: 10px;"></div>
+        <div ref="testChart" style="width:1400px; height:750px;position: absolute;left:20px;top: 10px;"></div>
       </el-col>
     </el-row>
   </section>
@@ -147,8 +147,8 @@ export default {
 }
 .realtime-display{
   width: 600px;
-  position: relative;
-  top: 65%;
-  left: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 </style>
