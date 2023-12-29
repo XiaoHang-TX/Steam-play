@@ -108,7 +108,7 @@ export default {
       setInterval(() => {
         this.fetchDataAndRefreshChart();
         this.fetchPlayerData();
-      }, 1800);
+      }, 1000);
     },
 
       drawCharts() {
