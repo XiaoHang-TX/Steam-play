@@ -36,7 +36,7 @@ export default {
   methods: {
     //绘图
     drawTestChart() {
-      axios.get("http://localhost:9527/ranks").then(res => {
+      axios.get("http://43.138.190.46:9527/ranks").then(res => {
         this.testChart = echarts.init(this.$refs.testChart);
         this.testChart.setOption({
           xAxis: {
@@ -75,7 +75,7 @@ export default {
       });
     },
     fetchDataAndRefreshChart() {
-      axios.get("http://localhost:9527/ranks").then(res => {
+      axios.get("http://43.138.190.46:9527/ranks").then(res => {
         this.drawTestChart(res.data);
       }).catch(error => {
         //打印错误
@@ -84,11 +84,11 @@ export default {
 
   // 评论消息
     fetchPlayerData() {
-        axios.get('http://localhost:9527/user_commends')
+        axios.get('http://43.138.190.46:9527/user_commends')
           .then(response => {
             this.UserName.push({
               UserName: response.data.UserName,
-              Comment: response.data.Commend  
+              Comment: response.data.Commend
           });
 
           if (this.UserName.length > this.maxDisplay) {
